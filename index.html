@@ -420,6 +420,29 @@
             line-height: 1.6;
         }
         .contact-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .contact-email { margin-bottom: 30px; }
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: var(--neon-green);
+            text-decoration: none;
+            padding: 14px 28px;
+            border: 1px solid rgba(0,255,136,0.3);
+            background: rgba(0,255,136,0.05);
+            transition: all 0.3s;
+            letter-spacing: 1px;
+            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+        }
+        .email-link:hover {
+            background: rgba(0,255,136,0.15);
+            border-color: var(--neon-green);
+            box-shadow: 0 0 30px rgba(0,255,136,0.3);
+            transform: translateY(-2px);
+        }
+        .email-icon { font-size: 1.3rem; }
 
         /* FOOTER */
         footer {
@@ -617,9 +640,15 @@
         <h2 class="section-title">LET'S BUILD</h2>
         <div class="contact-box">
             <p>Got an idea? A project? A collaboration?<br>Slide into my inbox and let's make something legendary.</p>
+            <div class="contact-email">
+                <a href="mailto:chris.dw2016@gmail.com" class="email-link">
+                    <span class="email-icon">✉</span>
+                    chris.dw2016@gmail.com
+                </a>
+            </div>
             <div class="contact-links">
-                <a href="https://github.com/ChrisBeast67" class="btn btn-primary" target="_blank">GITHUB</a>
-                <a href="https://chrisbeast67.github.io" class="btn btn-secondary" target="_blank">PORTFOLIO</a>
+                <a href="mailto:chris.dw2016@gmail.com" class="btn btn-primary">EMAIL ME</a>
+                <a href="https://github.com/ChrisBeast67" class="btn btn-secondary" target="_blank">GITHUB</a>
             </div>
         </div>
     </section>
